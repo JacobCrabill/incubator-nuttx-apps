@@ -7,6 +7,7 @@ config CANUTILS_SLCAN
 	tristate "SocketCAN slcan tool"
 	default n
 	depends on NET_CAN
+    select NETDEV_IFINDEX
 	---help---
 		Enable the SocketCAN slcan tool
 

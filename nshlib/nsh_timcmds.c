@@ -38,11 +38,7 @@
 
 #define MAX_TIME_STRING 80
 
-#ifdef CONFIG_CLOCK_MONOTONIC
-#  define TIME_CLOCK CLOCK_MONOTONIC
-#else
-#  define TIME_CLOCK CLOCK_REALTIME
-#endif
+#define TIME_CLOCK CLOCK_MONOTONIC
 
 /****************************************************************************
  * Private Function Prototypes
